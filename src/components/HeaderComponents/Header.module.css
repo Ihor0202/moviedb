@@ -1,0 +1,23 @@
+.header {
+    display: flex;
+    justify-content: space-evenly;
+    /*background-color: blue;*/
+    border: 2px solid black;
+}
+.Database {
+    width: 33%;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.homeContainer {
+    width: 33%;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.theme {
+    width: 33%;
+    display: flex;
+    justify-content: space-evenly;
+}
