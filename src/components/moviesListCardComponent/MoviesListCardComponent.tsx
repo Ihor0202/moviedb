@@ -9,7 +9,7 @@ type IProps = {
 }
 const MoviesListCardComponent:FC<IProps> = ({movie}) => {
     return (
-        <div className={styles.cardList}>
+        <div className={styles.cardList} key={movie.id}>
             <div>
             <img
                 // ref={movie.poster_path}

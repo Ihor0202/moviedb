@@ -1,5 +1,8 @@
 .cardList {
-    display: flex;
-
-    width: 18%;
+/*    display: grid;*/
+/*    grid-template-columns: 2fr 2fr 2fr 2fr 2fr;*/
+/*    border: solid black 2px;*/
+/*    !*width: 15%;*!*/
+    height: 250px;
+    border: solid 2px black;
 }
