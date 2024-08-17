@@ -6,7 +6,6 @@ import MoviesListCardComponent from "@/components/moviesListCardComponent/Movies
 import styles from "@/components/MoviesListComponent/MoviesList.module.css";
 import {IMovie} from "@/model/IMovie";
 import {useRouter} from "next/navigation";
-import Link from "next/link";
 
 
 // const SearchComponent = () => {
