@@ -1,8 +1,24 @@
+
 .cardList {
-/*    display: grid;*/
-/*    grid-template-columns: 2fr 2fr 2fr 2fr 2fr;*/
-/*    border: solid black 2px;*/
-/*    !*width: 15%;*!*/
-    height: 250px;
-    border: solid 2px black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 20px auto;
+    max-width: 300px;
 }
+
+.link {
+    color: black;
+}
+
+.img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px 10px 0 0;
+    object-fit: cover;
+}
+

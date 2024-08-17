@@ -1,0 +1,16 @@
+.moviesPage {
+
+    display: grid;
+
+    grid-template-columns: 2fr 2fr 2fr 2fr 2fr;
+    gap: 20px;
+    /*width: 100%;*/
+}
+.paginationContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    gap: 20px;
+
+}

@@ -1,0 +1,18 @@
+.genreBox {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.paragraph {
+    /*font-size: 12px;*/
+    padding: 2px;
+    margin-top: 5px;
+    /*background-color: black;*/
+    background-color: #333333;
+    border-radius: 10px;
+}
+.link{
+    color: white;
+}

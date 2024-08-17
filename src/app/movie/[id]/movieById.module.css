@@ -1,0 +1,22 @@
+.movieByIdContainer {
+    background-color: #e0e0e0;
+    border-radius: 20px;
+
+}
+.imgInfo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5px;
+    padding: 20px;
+    /*color: white;*/
+    gap: 50px;
+}
+
+.img {
+    height: 50vh;
+}
+
+.p {
+    font-size: 25px;
+}

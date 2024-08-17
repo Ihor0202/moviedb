@@ -1,10 +1,8 @@
-body {
+.paginationContainer {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #252525;
+    width: 100%;
+    gap: 20px;
 
-}
-body > * {
-    width: 80vw;
 }

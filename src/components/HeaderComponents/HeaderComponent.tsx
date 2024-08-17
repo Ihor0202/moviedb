@@ -15,13 +15,13 @@ const HeaderComponent = () => {
 
             <div className={styles.homeContainer}>
                 <h3><Link href={'/'}>Home</Link></h3>
-                <h3><Link href={'movies'}>movies</Link></h3>
-                <h3><Link href={'genre'}>genre</Link></h3>
-                <h3><Link href={'search'}>search</Link></h3>
+                <h3><Link href={'/movie'}>Movie</Link></h3>
+                <h3><Link href={'/genre'}>Genre</Link></h3>
+                <h3><Link href={'/search'}>Search</Link></h3>
             </div>
 
             <div className={styles.theme}>
-                <h3>theme</h3>
+                <h3>Theme</h3>
             </div>
         </div>
     );
