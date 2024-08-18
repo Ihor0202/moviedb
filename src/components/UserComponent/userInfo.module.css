@@ -1,0 +1,14 @@
+
+.loginImg {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+}
+
+.loginImg > img {
+    width: 40px;
+    height: 30px;
+    background-color: black;
+    border-radius: 50%;
+}

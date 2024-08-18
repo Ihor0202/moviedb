@@ -6,6 +6,7 @@ import MoviesListCardComponent from "@/components/moviesListCardComponent/Movies
 import styles from "@/components/MoviesListComponent/MoviesList.module.css";
 import {IMovie} from "@/model/IMovie";
 import {useRouter} from "next/navigation";
+import Link from "next/link";
 
 
 // const SearchComponent = () => {
@@ -85,6 +86,7 @@ const SearchComponent = () => {
             await router.push(`/search?query=${query}&page=${newPage}`);
             const searchMovie = await movieService.searchMovies(query, newPage);
             setSearchResults(searchMovie.results);
+            setTotalPages(searchMovie.total_pages)
         }
     };
 
@@ -99,8 +101,10 @@ const SearchComponent = () => {
                     Попередня
                 </button>
                 <p>Сторінка {page}</p>
-                <button onClick={handleNextPage} disabled={page === totalPages}>
-                    Наступна
+                <button onClick={handleNextPage} disabled={page === totalPages}
+                >
+                    <Link className={styles.link} href={{pathname: '/search', query: {page: JSON.stringify(page),
+                        query: JSON.stringify(query)}}}>Наступна</Link>
                 </button>
             </div>
         </div>

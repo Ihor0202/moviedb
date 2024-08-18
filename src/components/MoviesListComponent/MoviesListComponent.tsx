@@ -11,33 +11,7 @@ import Link from "next/link";
 // MoviesList (renders MoviesListCards)
 
 const MoviesListComponent = () => {
-    // const searchParams = useSearchParams();
-    // const searchPage = parseInt(searchParams.get('page') || '1');
-    //
-    // const [page, setPage] = useState<number>(searchParams);
-    // const [movies, setMovies] = useState<IMovies[]>([]);
-    //
-    // useEffect(() => {
-    //
-    //     const fetchMovies = async () => {
-    //         const moviesData = await movieService.getAllMovies(page);
-    //         setMovies(moviesData);
-    //     };
-    //     fetchMovies();
-    //
-    // }, [page]);
-    //
-    // const handleNextPage = () => {
-    //     setPage(prevPage => prevPage + 1); // Збільшуємо номер сторінки на 1
-    // };
-    //
-    // const handlePrevPage = () => {
-    //     if (page > 1) {
-    //         setPage(prevPage => prevPage - 1);
-    //     }
-    // };
 
-    // чат GPT
     const searchParams = useSearchParams();
     const router = useRouter();
 
@@ -91,7 +65,7 @@ const MoviesListComponent = () => {
                     <p>Сторінка {page}</p>
 
                     <button onClick={handleNextPage} disabled={page === max}>
-                        <Link href={{pathname: '/movie', query: {page: JSON.stringify(page)}}}>Наступна</Link>
+                        <Link className={styles.link} href={{pathname: '/movie', query: {page: JSON.stringify(page)}}}>Наступна</Link>
                     </button>
                 </div>
 

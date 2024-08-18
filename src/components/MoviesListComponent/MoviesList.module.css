@@ -6,11 +6,40 @@
     gap: 20px;
     /*width: 100%;*/
 }
+/*.paginationContainer {*/
+/*    display: flex;*/
+/*    justify-content: center;*/
+/*    align-items: center;*/
+/*    width: 100%;*/
+/*    gap: 20px;*/
+
+/*}*/
+
 .paginationContainer {
     display: flex;
-    justify-content: center;
     align-items: center;
-    width: 100%;
-    gap: 20px;
+    justify-content: center;
+    margin: 20px 0;
+}
 
+.paginationContainer button {
+    background-color: #000000; /* Основний колір */
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    margin: 0 5px;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+.paginationContainer p {
+    margin: 0 10px;
+    font-size: 16px;
+    font-weight: bold;
+    color: white;
+}
+.link {
+    text-decoration: none;
+    color: white;
 }

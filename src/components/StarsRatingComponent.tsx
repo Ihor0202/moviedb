@@ -1,29 +1,23 @@
-// import React, { Component } from 'react';
-// import StarRatings from 'react-star-ratings';
-//
-// class Foo extends Component<any, any> {
-//     constructor(props) {
-//         super(props);
-//         this.state = {
-//             rating: 2
-//         };
-//     }
-//
-//     changeRating = (newRating, name) => {
-//         this.setState({
-//             rating: newRating
-//         });
-//     }
-//
-//     render() {
-//         return (
-//             <StarRatings
-//                 rating={this.state.rating}
-//                 starRatedColor="blue"
-//                 changeRating={this.changeRating}
-//                 numberOfStars={10}
-//                 name='rating'
-//             />
-//         );
-//     }
-// }
+import React, {FC} from 'react';
+import StarRatings from "react-star-ratings";
+import {IMovie} from "@/model/IMovie";
+
+
+type IProps = {
+    movie: IMovie
+}
+const StarsRatingComponent: FC<IProps> = ({movie}) => {
+    return (
+        <div>
+            <StarRatings
+                rating={(movie.vote_average / 10) * 5}
+                starRatedColor="black"
+                starDimension="20px"
+                starSpacing="10px"
+                numberOfStars={5}
+            />
+        </div>
+    );
+};
+
+export default StarsRatingComponent;

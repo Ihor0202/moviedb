@@ -3,7 +3,7 @@ import {IMovie} from "@/model/IMovie";
 import styles from "./moviesListCard.module.css";
 import {baseUrlImg} from "@/constants/url";
 import Link from "next/link";
-import StarRatings from "react-star-ratings";
+import StarsRatingComponent from "@/components/StarsRatingComponent";
 
 
 // MoviesListCard (contain all movie information)
@@ -26,15 +26,17 @@ const MoviesListCardComponent:FC<IProps> = ({movie}) => {
                      height={200}
             />
                     <div>
-                        <StarRatings
-                            rating={(movie.vote_average / 10) * 5}
-                            starRatedColor="black"
-                            starDimension="20px"
-                            starSpacing="10px"
-                            numberOfStars={5}
-                        />
+                        <StarsRatingComponent movie={movie}/>
+
+                        {/*<StarRatings*/}
+                        {/*    rating={(movie.vote_average / 10) * 5}*/}
+                        {/*    starRatedColor="black"*/}
+                        {/*    starDimension="20px"*/}
+                        {/*    starSpacing="10px"*/}
+                        {/*    numberOfStars={5}*/}
+                        {/*/>*/}
                     </div>
-            <h4>popularity: {movie.popularity}
+            <h4>
                 {movie.title}: {movie.release_date}
                 <hr/>
             </h4>

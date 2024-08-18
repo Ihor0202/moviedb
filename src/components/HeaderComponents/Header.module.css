@@ -1,6 +1,6 @@
 .header {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
     align-items: center;
     padding: 10px 20px;
     color: #fff;
@@ -9,30 +9,51 @@
     border-radius: 10px;
 
 }
-.Database {
-    width: 33%;
-    display: flex;
-    justify-content: space-evenly;
-}
+/*.Database {*/
+/*    width: 33%;*/
+/*    display: flex;*/
+/*    justify-content: space-evenly;*/
+/*}*/
 
 .homeContainer {
-    width: 33%;
+    /*width: 33%;*/
     display: flex;
     justify-content: space-evenly;
+    gap: 10px;
+    /*border: black solid 1px;*/
+    /*border-radius: 10px;*/
+    background-color: #282828;
 }
 
 .theme {
     width: 33%;
     display: flex;
     justify-content: space-evenly;
+    align-items: center;
+
 }
 .homeContainer > h3 > * {
     color: white;
     text-decoration: none;
     transition: color 0.3s ease;
 }
+.homeContainer > h3 {
+    margin: 5px;
+}
 .homeContainer > h3 > *:hover {
     color: red;
+}
+
+.butWhite, .butBlack{
+    width: 25px;
+    height: 25px;
+    margin-left: 10px;
+}
+.butWhite {
+    background-color: white;
+}
+.butBlack {
+    background-color: black;
 }
 
 

@@ -13,10 +13,10 @@ const Page = async ({params:id}: Params) =>  {
 
     let movieById  = await movieService.getMovieById(idMovie)
 
-    // const genreNames = movieById.genres?.map(genre => genre.name);
 
     return (
         <div className={styles.movieByIdContainer}>
+            {/*<MovieInfoComponent/>*/}
             <div className={styles.imgInfo}>
 
                 <div>
@@ -36,7 +36,7 @@ const Page = async ({params:id}: Params) =>  {
                     <StarRatings
                         rating={(movieById.vote_average / 10) * 5}
                         starRatedColor="black"
-                        starDimension="20px"
+                        starDimension="30px"
                         starSpacing="10px"
                         numberOfStars={5}
                     />
