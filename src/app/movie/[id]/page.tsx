@@ -3,7 +3,7 @@ import React from 'react';
 import {movieService} from "@/service/api.service";
 import {Params} from "next/dist/shared/lib/router/utils/route-matcher";
 import styles from "./movieById.module.css";
-import {baseUrlImg} from "@/constants/url";
+import {baseUrlImg} from "@/Zdump/constants/url";
 import Link from "next/link";
 import StarRatings from "react-star-ratings";
 

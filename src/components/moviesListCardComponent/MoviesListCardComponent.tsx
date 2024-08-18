@@ -1,9 +1,9 @@
 import React, {FC} from 'react';
 import {IMovie} from "@/model/IMovie";
 import styles from "./moviesListCard.module.css";
-import {baseUrlImg} from "@/constants/url";
+import {baseUrlImg} from "@/Zdump/constants/url";
 import Link from "next/link";
-import StarsRatingComponent from "@/components/StarsRatingComponent";
+import StarsRatingComponent from "@/components/starsComponent/StarsRatingComponent";
 
 
 // MoviesListCard (contain all movie information)
